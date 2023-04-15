@@ -1,0 +1,100 @@
+.option {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  padding: 1rem;
+  background-color: var(--ltblue);
+  align-items: end;
+}
+
+label {
+  padding: 0.5rem;
+}
+input {
+  padding: 0.5rem;
+}
+.output {
+  font-size: 2rem;
+  font-family: var(--telex);
+  color: var(--green);
+  padding: 0.5rem;
+  display: flex;
+  margin: auto;
+}
+.drill-container {
+  background-color: var(--ltblue);
+  height: 80vh;
+}
+.submit {
+  width: 25%;
+  padding: 0.5rem;
+}
+.option-container {
+  display: flex;
+  margin: auto;
+}
+@media only screen and (min-width: 300px) {
+  .option {
+    display: block;
+    padding: 0.1rem;
+  }
+  .option-container {
+    display: block;
+  }
+}
+.buttons {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.drill-title {
+  background: rgba(3, 140, 101, 0.5);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(3, 140, 101, 0.5) 40%,
+    rgba(252, 70, 107, 0) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    var(--green) 40%,
+    rgba(252, 70, 107, 0) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(3, 140, 101, 0.5) 40%,
+    rgba(252, 70, 107, 0) 100%
+  );
+  color: var(--ltblue);
+}
+.frac {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  letter-spacing: 0.001em;
+  text-align: center;
+  /* padding: 5%; */
+}
+.frac > span {
+  display: block;
+  padding: 0.1em;
+}
+.frac span.bottom {
+  border-top: thick solid var(--green);
+}
+.frac span.symbol {
+  display: none;
+}
+.integral {
+  font-size: 2.5em;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  letter-spacing: 0.001em;
+  text-align: center;
+}
+.display-answer {
+  padding: 5%;
+  font-size: 5rem;
+}
